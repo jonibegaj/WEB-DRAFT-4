@@ -1,0 +1,44 @@
+/* General About Section Styling */
+.about-section {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #001f54;
+    line-height: 1.7;
+  }
+  
+  /* Headings */
+  .about-section h2 {
+    font-size: 2rem;
+    margin-top: 30px;
+    color: #002c7c;
+    border-left: 5px solid #ffc107;
+    padding-left: 15px;
+  }
+  
+  /* Paragraphs */
+  .about-section p {
+    font-size: 1.1rem;
+    margin-top: 10px;
+    color: #333;
+  }
+  
+  /* Optional: Add responsive tweaks */
+  @media (max-width: 768px) {
+    .about-section {
+      padding: 20px;
+    }
+  
+    .about-section h2 {
+      font-size: 1.5rem;
+    }
+  
+    .about-section p {
+      font-size: 1rem;
+    }
+  }
+  

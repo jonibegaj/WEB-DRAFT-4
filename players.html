@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="Images/Logo_UEFA_Champions_League.png" type="image/x-icon">
+  <title>Top Players | UEFA Champions League</title>
+  <link rel="stylesheet" href="players.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="logo"><img src="Images/uefa.png" alt="Photo"></div>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Top Clubs.html">Top Clubs</a></li>
+        <li><a href="players.html" class="active">Top Players</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="quiz.html">Quiz Game</a></li>
+        <li><a href="fantasy.html">Fantasy</a></li>
+        <li><a href="About.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="header">
+    <h1>⚽ Champions League Contributors</h1>
+    <input type="text" id="searchBar" placeholder="Search players...">
+  </div>
+
+  <div class="container">
+    <div>
+      <h2 class="section-title">Top Goalscorers</h2>
+      <div id="goalscorers" class="players-grid"></div>
+    </div>
+    <div>
+      <h2 class="section-title">Top Assisters</h2>
+      <div id="assisters" class="players-grid"></div>
+    </div>
+  </div>
+  <!-- Player Details Modal -->
+  <div id="playerModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <div id="playerDetailsContent">
+        <!-- Details will be injected here -->
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <img src="Images/uefa.png" alt="UEFA Logo">
+      </div>
+      <div class="footer-links">
+        <p>Follow us on</p>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/championsleague/" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.facebook.com/ChampionsLeague/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://x.com/championsleague" target="_blank"><i class="fab fa-x-twitter"></i></a>
+          <a href="https://www.youtube.com/uefatv" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+      </div>
+      <p class="footer-text">© 2025 UEFA Champions League Project. All rights reserved.</p>
+      <p class="footer-text2">The UEFA word, the UEFA logo and all marks related to UEFA competitions, are protected by
+        trademarks and/or copyright of UEFA. No use for commercial purposes may be made of such trademarks. Use of
+        UEFA.com signifies your agreement to the Terms and Conditions and Privacy Policy.</p>
+    </div>
+  </footer>
+  <script src="players.js"></script>
+</body>
+
+</html>

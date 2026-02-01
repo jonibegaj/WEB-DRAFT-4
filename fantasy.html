@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fantasy UCL | UEFA Champions League</title>
+    <link rel="shortcut icon" href="Images/Logo_UEFA_Champions_League.png" type="image/x-icon">
+    <link rel="stylesheet" href="Home.css">
+    <link rel="stylesheet" href="fantasy.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo"><img src="Images/uefa.png" alt="Photo"></div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Top Clubs.html">Top Clubs</a></li>
+                <li><a href="players.html">Top Players</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="quiz.html">Quiz Game</a></li>
+                <li><a href="fantasy.html" class="active">Fantasy</a></li>
+                <li><a href="About.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="fantasy-container">
+        <div class="fantasy-header">
+            <h1>🏆 UCL Fantasy Football</h1>
+            <p>Build your dream team of 6 players!</p>
+            <div class="selection-counter">Selected: <span id="selectedCount">0</span>/6</div>
+        </div>
+
+        <div class="fantasy-layout">
+            <!-- Left: Player Selection Pool -->
+            <div class="player-pool">
+                <h2>Transfer Market</h2>
+                <div class="filter-tabs">
+                    <button class="tab-btn active" data-pos="ALL">ALL</button>
+                    <button class="tab-btn" data-pos="GK">GK</button>
+                    <button class="tab-btn" data-pos="DEF">DEF</button>
+                    <button class="tab-btn" data-pos="MID">MID</button>
+                    <button class="tab-btn" data-pos="ATK">ATK</button>
+                </div>
+                <div id="playerList" class="player-grid">
+                    <!-- Players will be loaded here -->
+                </div>
+            </div>
+
+            <!-- Right: Your Pitch -->
+            <div class="pitch-container">
+                <div class="pitch">
+                    <div class="pitch-line center-circle"></div>
+                    <div class="pitch-line penalty-area top"></div>
+                    <div class="pitch-line penalty-area bottom"></div>
+
+                    <div class="position-slots">
+                        <!-- ATK Row -->
+                        <div class="pitch-row atk-row">
+                            <div class="slot" data-pos="ATK" id="atk1"><span>+</span></div>
+                            <div class="slot" data-pos="ATK" id="atk2"><span>+</span></div>
+                        </div>
+                        <!-- MID Row -->
+                        <div class="pitch-row mid-row">
+                            <div class="slot" data-pos="MID" id="mid1"><span>+</span></div>
+                        </div>
+                        <!-- DEF Row -->
+                        <div class="pitch-row def-row">
+                            <div class="slot" data-pos="DEF" id="def1"><span>+</span></div>
+                            <div class="slot" data-pos="DEF" id="def2"><span>+</span></div>
+                        </div>
+                        <!-- GK Row -->
+                        <div class="pitch-row gk-row">
+                            <div class="slot" data-pos="GK" id="gk1"><span>+</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="actions">
+                    <input type="text" id="fantasyUsername" placeholder="Enter Team Name">
+                    <button id="submitTeamBtn" class="submit-team-btn" disabled>Submit Team</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Leaderboard Modal -->
+    <div id="fantasyLeaderboardModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Fantasy Leaderboard</h2>
+            <div class="leaderboard-table" id="fantasyLeaderboardContent">
+                <!-- Leaderboard will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="fantasy.js"></script>
+</body>
+
+</html>

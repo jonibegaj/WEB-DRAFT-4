@@ -1,0 +1,86 @@
+<!DOCTYPE html><!-- tells browser this is an html5 doc -->
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8"><!-- supports all characters encoding,esp emojis and is generally most used-->
+  <title>Home | UEFA Champions League</title><!-- the title written in tab -->
+  <link rel="shortcut icon" href="Images/Logo_UEFA_Champions_League.png">
+  <!-- the link tag serves for the small image displayed on the tab-->
+  <link rel="stylesheet" href="Home.css">
+  <!-- links with external css file to index.html for style loading before content rendering -->
+  <script src="home.js" defer></script>
+  <!-- links to the js source, defer attribute serves that after rendering and it load in parallel with the html but AFTER parsing then it executes -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"><!--font -->
+</head><!-- top section of the page -->
+
+<body>
+  <header>
+    <div class="logo"><img src="Images/uefa.png" alt="Photo"></div>
+    <nav class="navbar">
+      <ul><!--unordered without numbers associated --><!-- li = list item-->
+        <li><a href="index.html" class="active">Home</a></li>
+        <!--a is for internal links --><!-- class ACTIVE highlights current page in navigation -->
+        <li><a href="Top Clubs.html">Top Clubs</a></li>
+        <li><a href="players.html">Top Players</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="quiz.html">Quiz Game</a></li>
+        <li><a href="fantasy.html">Fantasy</a></li>
+        <li><a href="About.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="hero-banner"><!--the main window under header -->
+
+    <div class="news-slideshow"><!-- the window that will have news conntent -->
+      <div class="slideshow-container"><!--to be seen again -->
+        <div class="slide fade">
+          <img src="Images/semi-finals_web.webp" alt="News 1"><!-- in case image doesnt load,alt shows -->
+          <p>Road to Munich 2025</p>
+        </div>
+        <div class="slide fade">
+          <img src="Images/topscorer.png" alt="News 2">
+          <p>2025 campaign's top scorers</p>
+        </div>
+        <div class="slide fade">
+          <img src="Images/totw2.jpg" alt="News 3">
+          <p>TOTW Quarter final second leg</p>
+        </div>
+      </div>
+    </div>
+    <!--first div to create section within hero banner,2nd one  is the container which will have the DIVS that will slide-->
+
+    <div class="hero-content">
+      <h1>The Champions</h1>
+      <p>Experience the thrill, history, and glory of Europe's greatest football competition</p>
+      <a href="Top Clubs.html" class="hero-btn">Explore Top
+        Clubs</a><!-- we havent used button as we havent made it event driven but just linked url -->
+    </div>
+  </div>
+
+  <footer class="footer"><!-- footer start -->
+    <div class="footer-content">
+      <div class="footer-logo">
+        <img src="Images/uefa.png" alt="UEFA Logo">
+      </div>
+      <div class="footer-links">
+        <p>Follow us on</p>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/championsleague/" target="_blank"><i
+              class="fab fa-instagram"></i></a><!-- the target mode opens up a new tab -->
+          <a href="https://www.facebook.com/ChampionsLeague/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://x.com/championsleague" target="_blank"><i class="fab fa-x-twitter"></i></a>
+          <a href="https://www.youtube.com/uefatv" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+
+      </div>
+      <p class="footer-text">© 2025 UEFA Champions League Project. All rights reserved.</p>
+      <p class="footer-text2">The UEFA word, the UEFA logo and all marks related to UEFA competitions, are protected by
+        trademarks and/or copyright of UEFA. No use for commercial purposes may be made of such trademarks. Use of
+        UEFA.com signifies your agreement to the Terms and Conditions and Privacy Policy.</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>

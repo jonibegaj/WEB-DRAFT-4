@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz | UEFA Champions League</title>
+    <link rel="shortcut icon" href="Images/Logo_UEFA_Champions_League.png" type="image/x-icon">
+    <link rel="stylesheet" href="Home.css">
+    <link rel="stylesheet" href="quiz.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo"><img src="Images/uefa.png" alt="Photo"></div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Top Clubs.html">Top Clubs</a></li>
+                <li><a href="players.html">Top Players</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="quiz.html" class="active">Quiz</a></li>
+                <li><a href="fantasy.html">Fantasy</a></li>
+                <li><a href="About.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Username Selection Modal -->
+    <div class="modal active" id="usernameModal">
+        <div class="modal-content">
+            <div id="welcomeStage">
+                <h2>Champions League Quiz</h2>
+                <div class="leaderboard-section">
+                    <h3>Current Top Players</h3>
+                    <div class="leaderboard-table" id="initialLeaderboardList">
+                        <div class="loading-text">Loading scores...</div>
+                    </div>
+                </div>
+                <button class="retry-btn" id="playQuizBtn">Play Quiz</button>
+            </div>
+
+            <div id="nameEntryStage" style="display: none;">
+                <h2>Enter Your Name</h2>
+                <p>Enter your username to join the leaderboard!</p>
+                <input type="text" id="usernameInput" placeholder="Username..."
+                    style="width: 80%; padding: 10px; margin: 20px 0; border-radius: 5px; border: 1px solid #ccc;">
+                <button class="retry-btn" id="startQuizBtn">Start Quiz</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="quiz-container">
+        <!-- Return Home Button -->
+        <a href="index.html" class="return-home-btn" title="Return to Home">
+            <i class="fas fa-home"></i> Return to Home
+        </a>
+
+        <!-- Points Tracker -->
+        <div class="points-tracker">
+            <div class="points-display">
+                <i class="fas fa-star"></i>
+                <span id="points">10</span>
+                <span class="points-label">Points</span>
+            </div>
+        </div>
+
+        <!-- Progress Circles -->
+        <div class="progress-container">
+            <div class="progress-circles" id="progressCircles">
+                <!-- Will be populated by JavaScript -->
+            </div>
+        </div>
+
+        <!-- Quiz Content -->
+        <div class="quiz-content">
+            <div class="question-container">
+                <h2 id="question">Loading question...</h2>
+            </div>
+
+            <div class="answers-grid">
+                <button class="answer-btn" data-answer="0"></button>
+                <button class="answer-btn" data-answer="1"></button>
+                <button class="answer-btn" data-answer="2"></button>
+                <button class="answer-btn" data-answer="3"></button>
+            </div>
+
+            <button class="submit-btn" id="submitBtn" disabled>Submit Answer</button>
+        </div>
+
+        <!-- Game Over Modal -->
+        <div class="modal" id="gameOverModal">
+            <div class="modal-content">
+                <h2 id="modalTitle">Game Over!</h2>
+                <p id="modalMessage">You ran out of points!</p>
+                <div class="modal-stats">
+                    <p>Questions Answered: <span id="questionsAnswered">0</span>/10</p>
+                    <p>Final Score: <span id="finalScore">0</span></p>
+                </div>
+                <button class="retry-btn" id="retryBtn">Try Again</button>
+            </div>
+        </div>
+
+        <!-- Victory Modal -->
+        <div class="modal" id="victoryModal">
+            <div class="modal-content victory">
+                <h2>🏆 Congratulations!</h2>
+                <p>You've completed the quiz!</p>
+                <div class="modal-stats">
+                    <p>Questions Answered: <span id="victoryQuestionsAnswered">10</span>/10</p>
+                    <p>Final Score: <span id="victoryScore">0</span></p>
+                </div>
+                <!-- Leaderboard Section -->
+                <div class="leaderboard-section">
+                    <h3>Leaderboard</h3>
+                    <div class="leaderboard-table" id="leaderboardList">
+                        <!-- Leaderboard entries will be loaded here -->
+                    </div>
+                </div>
+                <button class="retry-btn" id="victoryRetryBtn">Play Again</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="Images/uefa.png" alt="UEFA Logo">
+            </div>
+            <div class="footer-links">
+                <p>Follow us on</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/championsleague/" target="_blank"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/ChampionsLeague/" target="_blank"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://x.com/championsleague" target="_blank"><i class="fab fa-x-twitter"></i></a>
+                    <a href="https://www.youtube.com/uefatv" target="_blank"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <p class="footer-text">© 2025 UEFA Champions League Project. All rights reserved.</p>
+            <p class="footer-text2">The UEFA word, the UEFA logo and all marks related to UEFA competitions, are
+                protected by trademarks and/or copyright of UEFA. No use for commercial purposes may be made of such
+                trademarks. Use of UEFA.com signifies your agreement to the Terms and Conditions and Privacy Policy.</p>
+        </div>
+    </footer>
+
+    <script src="quiz.js"></script>
+</body>
+
+</html>

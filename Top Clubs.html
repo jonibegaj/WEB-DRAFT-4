@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Top Clubs | UEFA Champions League</title>
+  <link rel="shortcut icon" href="Images/Logo_UEFA_Champions_League.png">
+  <link rel="stylesheet" href="Home.css">
+  <link rel="stylesheet" href="Top Clubs.css">
+  <script src="top_clubs.js" defer></script>
+  <!-- add a search feature just like in top players -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo"><img src="Images/uefa.png" alt="Photo"></div>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Top Clubs.html" class="active">Top Clubs</a></li>
+        <li><a href="players.html">Top Players</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="quiz.html">Quiz Game</a></li>
+        <li><a href="fantasy.html">Fantasy</a></li>
+        <li><a href="About.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="top-clubs-header">
+    <h1>Top UEFA Champions League Clubs</h1>
+    <p>Explore all the winners in UCL history</p>
+    <input type="text" id="clubSearchBar" placeholder="Search clubs..."   />
+  </div>
+
+  <div class="clubs-container">
+    <div class="flip-card" data-club-id="real-madrid"><!-- this class has the flip method in css -->
+      <div class="flip-card-inner">
+        <!-- Front Side -->
+        <div class="flip-card-front">
+          <img src="Images/Real_Madrid_CF.svg.webp" alt="Real Madrid">
+          <h3>Real Madrid CF</h3>
+        </div>
+
+        <!-- Back Side (Only Image) -->
+        <div class="flip-card-back">
+          <img src="Images/15.jpeg" alt="15"> <!-- Image only on back -->
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card" data-club-id="ac-milan">
+      <div class="flip-card-inner">
+        <!-- Front Side -->
+        <div class="flip-card-front">
+          <img src="Images/Milan.webp" alt="Milan">
+          <h3>AC Milan</h3>
+        </div>
+
+        <!-- Back Side (Only Image) -->
+        <div class="flip-card-back">
+          <img src="Images/7.webp" alt="7"> <!-- Image only on back -->
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card" data-club-id="liverpool">
+      <div class="flip-card-inner">
+        <!-- Front Side -->
+        <div class="flip-card-front">
+          <img src="Images/liverpool.png" alt="Liverpool">
+          <h3>Liverpool FC</h3>
+        </div>
+
+        <!-- Back Side (Only Image) -->
+        <div class="flip-card-back">
+          <img src="Images/6.jpg" alt="6"> <!-- Image only on back -->
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card" data-club-id="bayern-munich">
+      <div class="flip-card-inner">
+        <!-- Front Side -->
+        <div class="flip-card-front">
+          <img src="Images/FC_Bayern_München_logo_(2024).svg" alt="Bayern Munich">
+          <h3>FC Bayern Munich</h3>
+        </div>
+
+        <!-- Back Side (Only Image) -->
+        <div class="flip-card-back">
+          <img src="Images/6.jpg" alt="6"> <!-- Image only on back -->
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card" data-club-id="barcelona">
+      <div class="flip-card-inner">
+        <!-- Front Side -->
+        <div class="flip-card-front">
+          <img src="Images/FC_Barcelona_(crest).svg.png" alt="Barcelona">
+          <h3>FC Barcelona</h3>
+        </div>
+
+        <!-- Back Side (Only Image) -->
+        <div class="flip-card-back">
+          <img src="Images/5.jpg" alt="5"> <!-- Image only on back -->
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card" data-club-id="ajax">
+      <div class="flip-card-inner">
+        <!-- Front Side -->
+        <div class="flip-card-front">
+          <img src="Images/Ajax_Amsterdam.svg.webp" alt="Ajax">
+          <h3>Ajax FC</h3>
+        </div>
+
+        <!-- Back Side (Only Image) -->
+        <div class="flip-card-back">
+          <img src="Images/4.jpg" alt="4"> <!-- Image only on back -->
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card" data-club-id="man-united">
+      <div class="flip-card-inner">
+        <!-- Front Side -->
+        <div class="flip-card-front">
+          <img src="Images/Manchester_United_FC_crest.svg.png" alt="ManUTD">
+          <h3>Manchester United FC</h3>
+        </div>
+
+        <!-- Back Side (Only Image) -->
+        <div class="flip-card-back">
+          <img src="Images/3.png" alt="3"> <!-- Image only on back -->
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card" data-club-id="inter-milan">
+      <div class="flip-card-inner">
+        <!-- Front Side -->
+        <div class="flip-card-front">
+          <img src="Images/inter.webp" alt="Inter">
+          <h3>FC Internazionale Milano</h3>
+        </div>
+
+        <!-- Back Side (Only Image) -->
+        <div class="flip-card-back">
+          <img src="Images/3.png" alt="3"> <!-- Image only on back -->
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card" data-club-id="chelsea">
+      <div class="flip-card-inner">
+        <!-- Front Side -->
+        <div class="flip-card-front">
+          <img src="Images/Chelsea_FC.svg.png" alt="Chelsea">
+          <h3>Chelsea FC</h3>
+        </div>
+
+        <!-- Back Side (Only Image) -->
+        <div class="flip-card-back">
+          <img src="Images/2.png" alt="2"> <!-- Image only on back -->
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card" data-club-id="nottingham-forest">
+      <div class="flip-card-inner">
+        <!-- Front Side -->
+        <div class="flip-card-front">
+          <img src="Images/Nottingham_Forest_F.C._logo.svg.png" alt="Nottingham Forest">
+          <h3>Nottingham Forest FC</h3>
+        </div>
+
+        <!-- Back Side (Only Image) -->
+        <div class="flip-card-back">
+          <img src="Images/2.png" alt="2"> <!-- Image only on back -->
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card" data-club-id="benfica">
+      <div class="flip-card-inner">
+        <!-- Front Side -->
+        <div class="flip-card-front">
+          <img src="Images/SL_Benfica_logo.svg.png" alt="Benfica">
+          <h3>SL Benfica</h3>
+        </div>
+
+        <!-- Back Side (Only Image) -->
+        <div class="flip-card-back">
+          <img src="Images/2.png" alt="2"> <!-- Image only on back -->
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card" data-club-id="juventus">
+      <div class="flip-card-inner">
+        <!-- Front Side -->
+        <div class="flip-card-front">
+          <img src="Images/Juventus_FC_-_logo_black_(Italy,_2020).svg" alt="Juventus">
+          <h3>Juventus FC</h3>
+        </div>
+
+        <!-- Back Side (Only Image) -->
+        <div class="flip-card-back">
+          <img src="Images/2.png" alt="2"> <!-- Image only on back -->
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card" data-club-id="porto">
+      <div class="flip-card-inner">
+        <!-- Front Side -->
+        <div class="flip-card-front">
+          <img src="Images/FC_Porto.svg.png" alt="Porto">
+          <h3>FC Porto</h3>
+        </div>
+
+        <!-- Back Side (Only Image) -->
+        <div class="flip-card-back">
+          <img src="Images/2.png" alt="2"> <!-- Image only on back -->
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card" data-club-id="psg">
+      <div class="flip-card-inner">
+        <!-- Front Side -->
+        <div class="flip-card-front">
+          <img src="Images/PSG_FC.png" alt="PSG">
+          <h3>PSG FC</h3>
+        </div>
+
+        <!-- Back Side (Only Image) -->
+        <div class="flip-card-back">
+          <img src="Images/1.png" alt="1"> <!-- Image only on back -->
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card" data-club-id="man-city">
+      <div class="flip-card-inner">
+        <!-- Front Side -->
+        <div class="flip-card-front">
+          <img src="Images/Manchester_City_FC_badge.svg.png" alt="Manchester City">
+          <h3>Manchester City FC</h3>
+        </div>
+
+        <!-- Back Side (Only Image) -->
+        <div class="flip-card-back">
+          <img src="Images/1.png" alt="1"> <!-- Image only on back -->
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card" data-club-id="dortmund">
+      <div class="flip-card-inner">
+        <!-- Front Side -->
+        <div class="flip-card-front">
+          <img src="Images/Borussia_Dortmund_logo.svg.webp" alt="Borussia Dortmund">
+          <h3>Borussia Dortmund</h3>
+        </div>
+
+        <!-- Back Side (Only Image) -->
+        <div class="flip-card-back">
+          <img src="Images/1.png" alt="1"> <!-- Image only on back -->
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card" data-club-id="feyenoord">
+      <div class="flip-card-inner">
+        <!-- Front Side -->
+        <div class="flip-card-front">
+          <img src="Images/Feyenoord_logo_since_2024.svg.png" alt="Feyenoord">
+          <h3>Feyenoord</h3>
+        </div>
+
+        <!-- Back Side (Only Image) -->
+        <div class="flip-card-back">
+          <img src="Images/1.png" alt="1"> <!-- Image only on back -->
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card" data-club-id="marseille">
+      <div class="flip-card-inner">
+        <!-- Front Side -->
+        <div class="flip-card-front">
+          <img src="Images/Olympique_Marseille_logo.svg.png" alt="Olympique de Marseille">
+          <h3>Olympique de Marseille</h3>
+        </div>
+
+        <!-- Back Side (Only Image) -->
+        <div class="flip-card-back">
+          <img src="Images/1.png" alt="1"> <!-- Image only on back -->
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card" data-club-id="aston-villa">
+      <div class="flip-card-inner">
+        <!-- Front Side -->
+        <div class="flip-card-front">
+          <img src="Images/astonvilla.png" alt="Aston Villa">
+          <h3>Aston Villa FC</h3>
+        </div>
+
+        <!-- Back Side (Only Image) -->
+        <div class="flip-card-back">
+          <img src="Images/1.png" alt="1"> <!-- Image only on back -->
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card" data-club-id="hamburger">
+      <div class="flip-card-inner">
+        <!-- Front Side -->
+        <div class="flip-card-front">
+          <img src="Images/hamburg sv.png" alt="Hamburger">
+          <h3>Hamburger SV</h3>
+        </div>
+
+        <!-- Back Side (Only Image) -->
+        <div class="flip-card-back">
+          <img src="Images/1.png" alt="1"> <!-- Image only on back -->
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card" data-club-id="red-star">
+      <div class="flip-card-inner">
+        <!-- Front Side -->
+        <div class="flip-card-front">
+          <img src="Images/Red_Star_Belgrade_crest.svg.png" alt="Crvena">
+          <h3>Crvena Zvezda</h3>
+        </div>
+
+        <!-- Back Side (Only Image) -->
+        <div class="flip-card-back">
+          <img src="Images/1.png" alt="1"> <!-- Image only on back -->
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card" data-club-id="fcsb">
+      <div class="flip-card-inner">
+        <!-- Front Side -->
+        <div class="flip-card-front">
+          <img src="Images/Fcsb-logo.svg.png" alt="FCSB">
+          <h3>FCSB</h3>
+        </div>
+
+        <!-- Back Side (Only Image) -->
+        <div class="flip-card-back">
+          <img src="Images/1.png" alt="1"> <!-- Image only on back -->
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card" data-club-id="psv">
+      <div class="flip-card-inner">
+        <!-- Front Side -->
+        <div class="flip-card-front">
+          <img src="Images/PSV_Eindhoven.svg.png" alt="PSV">
+          <h3>PSV Eindhoven</h3>
+        </div>
+
+        <!-- Back Side (Only Image) -->
+        <div class="flip-card-back">
+          <img src="Images/1.png" alt="1"> <!-- Image only on back -->
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card" data-club-id="celtic">
+      <div class="flip-card-inner">
+        <!-- Front Side -->
+        <div class="flip-card-front">
+          <img src="Images/Celtic_FC_crest.svg.png" alt="Celtic">
+          <h3>Celtic FC</h3>
+        </div>
+
+        <!-- Back Side (Only Image) -->
+        <div class="flip-card-back">
+          <img src="Images/1.png" alt="1"> <!-- Image only on back -->
+        </div>
+      </div>
+    </div>
+    <!-- Add more clubs here -->
+  </div>
+
+  <!-- Club Details Modal -->
+  <div id="clubModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <div id="clubDetailsContent">
+        <!-- Details will be injected here -->
+      </div>
+    </div>
+  </div>
+
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <img src="Images/uefa.png" alt="UEFA Logo">
+      </div>
+      <div class="footer-links">
+        <p>Follow us on</p>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/championsleague/" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.facebook.com/ChampionsLeague/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://x.com/championsleague" target="_blank"><i class="fab fa-x-twitter"></i></a>
+          <a href="https://www.youtube.com/uefatv" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+
+      </div>
+      <p class="footer-text">© 2025 UEFA Champions League Project. All rights reserved.</p>
+      <p class="footer-text2">The UEFA word, the UEFA logo and all marks related to UEFA competitions, are protected by
+        trademarks and/or copyright of UEFA. No use for commercial purposes may be made of such trademarks. Use of
+        UEFA.com signifies your agreement to the Terms and Conditions and Privacy Policy.</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>

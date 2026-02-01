@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | UEFA Champions League</title>
+    <link rel="stylesheet" href="players.css">
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="shortcut icon" href="Images/Logo_UEFA_Champions_League.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <div class="logo"><img src="Images/uefa.png" alt="Photo"></div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Top Clubs.html">Top Clubs</a></li>
+                <li><a href="players.html">Top Players</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="quiz.html">Quiz Game</a></li>
+                <li><a href="fantasy.html">Fantasy</a></li>
+                <li><a href="About.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Header Section -->
+    <section class="gallery-section">
+        <h2>Iconic UCL Moments</h2>
+
+        <div class="gallery-grid">
+            <!-- 2014 Final -->
+            <div class="gallery-item" data-year="2014"
+                data-description="Sergio Ramos' iconic 92:48 header to force extra time"
+                data-video="videos/ramos-2014.mp4">
+                <img src="moments/ramos-2014.jpg" alt="Ramos La Decima Header">
+                <div class="overlay">
+                    <span class="year-badge">2014</span>
+                    <h3>La Decima Miracle</h3>
+                </div>
+            </div>
+
+            <!-- 2018 Final -->
+            <div class="gallery-item" data-year="2018" data-description="Gareth Bale's stunning overhead kick in Kyiv"
+                data-video="videos/bale-2018.mp4">
+                <img src="moments/bale-2018.jpg" alt="Bale Bicycle Kick">
+                <div class="overlay">
+                    <span class="year-badge">2018</span>
+                    <h3>Bale's Gravity-Defying Goal</h3>
+                </div>
+            </div>
+
+            <!-- 2011 Final -->
+            <div class="gallery-item" data-year="2011" data-description="Messi's magical solo goal vs Manchester United"
+                data-video="videos/messi-2011.mp4">
+                <img src="moments/messi-2011.jpg" alt="Messi Wembley Magic">
+                <div class="overlay">
+                    <span class="year-badge">2011</span>
+                    <h3>Messi's Wembley Masterclass</h3>
+                </div>
+            </div>
+
+            <!-- 2022: Rodrygo's Two-Minute Resurrection -->
+            <div class="gallery-item" data-year="2022"
+                data-description="90' & 90+1' goals complete one of the greatest Champions League comebacks ever.">
+                <img src="moments/rodrygo-2022.jpg" alt="Rodrygo's late header">
+                <div class="overlay">
+                    <span class="year-badge">2022</span>
+                    <h3>Rodrygo’s Two-Minute Resurrection</h3>
+                </div>
+            </div>
+
+            <!-- 2024: Joselu: The Super-Sub Miracle -->
+            <div class="gallery-item" data-year="2024"
+                data-description="Two goals in three minutes send Real Madrid to the Champions League final.">
+                <img src="moments/joselu-2024.jpg" alt="Joselu scores past Manuel Neuer">
+                <div class="overlay">
+                    <span class="year-badge">2024</span>
+                    <h3>Joselu: The Super-Sub Miracle</h3>
+                </div>
+            </div>
+
+            <!-- 2025: Kvaratskhelia’s Goal vs Aston Villa -->
+            <div class="gallery-item" data-year="2025"
+                data-description="A stunning long-range strike turns the quarter-final around for PSG.">
+                <img src="moments/kvaratskhelia-2025.jpg" alt="Khvicha Kvaratskhelia's long-range shot">
+                <div class="overlay">
+                    <span class="year-badge">2025</span>
+                    <h3>Kvaratskhelia's Paris Thunderbolt</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+
+        <div class="lightbox-content">
+            <!-- IMAGE -->
+            <img id="lightbox-image" src="" alt="" style="max-width:60%; border-radius:12px; display:none;">
+
+            <!-- VIDEO -->
+            <video id="lightbox-video" controls style="max-width:60%; border-radius:12px; display:none;">
+                <source src="" type="video/mp4">
+            </video>
+
+            <div class="caption">
+                <h3 id="lightbox-title"></h3>
+                <p id="lightbox-description"></p>
+
+                <div class="lightbox-nav">
+                    <button class="lightbox-btn prev">❮</button>
+                    <span id="lightbox-year"></span>
+                    <button class="lightbox-btn next">❯</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="Images/uefa.png" alt="UEFA Logo">
+            </div>
+
+            <div class="footer-links">
+                <p>Follow us on</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/championsleague/" target="_blank"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/ChampionsLeague/" target="_blank"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://x.com/championsleague" target="_blank"><i class="fab fa-x-twitter"></i></a>
+                    <a href="https://www.youtube.com/uefatv" target="_blank"><i class="fab fa-youtube"></i></a>
+                </div>
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+            </div>
+
+            <p class="footer-text">© 2025 UEFA Champions League Project. All rights reserved.</p>
+            <p class="footer-text2">The UEFA word, the UEFA logo and all marks related to UEFA competitions, are
+                protected by trademarks and/or copyright of UEFA. No use for commercial purposes may be made of such
+                trademarks. Use of UEFA.com signifies your agreement to the Terms and Conditions and Privacy Policy.</p>
+        </div>
+    </footer>
+
+    <script src="gallery.js"></script>
+</body>
+
+</html>
