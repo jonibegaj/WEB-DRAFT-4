@@ -1,0 +1,26 @@
+# .gitignore for UCL Project
+
+# Build outputs
+bin/
+obj/
+*.exe
+*.dll
+*.pdb
+
+# Database
+UclBackend/ucl_project.db
+UclBackend/ucl_project.db-shm
+UclBackend/ucl_project.db-wal
+
+# Dependencies
+node_modules/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.user
+*.suo
